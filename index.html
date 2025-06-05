@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Practice Web Page</title>
+<style>
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+</style>
+
+<style>
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+</style>
+
 <style>  
 table {
   font-family: times new roman;
@@ -24,9 +52,6 @@ td, th {
 </header>
 …
 <main id="main">
-
-<p>Here is a simple image with alt text.<p>
-<img src="img_dog.jpg" width="500" height="400" alt="Dog in a basket">
 
 <h1>This is a level 1 Heading.</h1>
 
@@ -56,15 +81,18 @@ td, th {
 
 <p>Here is link to an extefrnal website: <a href="https://www.gmu.edu/" target="_blank">Visit gmu.com!</a>
 </p>
- 
-<p></p>
-<caption>Here is a data table.</caption> 
-<p></p>
+
+<p>Here is a simple image with alt text.<p>
+<img src="img_dog.jpg" width="500" height="400" alt="Dog in a basket">
+
 <table>
+<p style="text-align: left;"></p>    
+<caption><strong>Here is a data table</strong><caption> 
+<p></p>    
   <tr>
-    <th bgcolor="#ebedef" scope="col">Student Name</th>
-    <th bgcolor="#ebedef" scope="col">Student ID</th>
-    <th bgcolor="#ebedef" scope="col">Grade</th>
+    <th style=background-color:lightgray scope="col">Student Name</th>
+    <th style=background-color:lightgray scope="col">Student ID</th>
+    <th style=background-color:lightgray scope="col">Grade</th>
   </tr>
   <tr>
     <td>Allison Graves</td>
@@ -114,10 +142,8 @@ td, th {
   <input type="submit" value="Submit">
 </form> 
 
-<style>
-{font-family: Veranda; cursive}
-</style>
-<p>This is a different font family for a paragraph of this document.</p>
+<p class="p3">This is a different font family for a paragraph of this document.</p>
+<p style="background-color:navajowhite;">The background color in the body of this document is navajo white.</p>
 
 </body>
 
