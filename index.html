@@ -44,6 +44,27 @@ td, th {
 }
 
 </style>  
+<style>
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: green;
+}
+</style>
 </head>
 <body>
 <header>
@@ -79,15 +100,18 @@ td, th {
 <li>numbered list item 3</li>
 </ol>  
 
-<p>Here is link to an extefrnal website: <a href="https://www.gmu.edu/" target="_blank">Visit gmu.com!</a>
+<p>Here is link to an external website (with target attribute and pseudo classes): <a href="https://www.gmu.edu/" target="_blank">Visit gmu.com!</a>
 </p>
 
 <p>Here is a simple image with alt text.<p>
 <img src="img_dog.jpg" width="500" height="400" alt="Dog in a basket">
 
-<p>Here is a data table with borders and separate color for the table header.</p>
+<p>Here is a complex image with long description using ARIA.<p>
+<img src="img_dog.jpg" width="500" height="400" alt="Dog in a basket" ariadescribedby="long description">
+<p id="long description"> This cute dog in a basket was photographed by its owner after a day at the park after a picnic.</p>
 
-<br><br>   
+<p>Here is a data table with borders and separate color for the table header.</p>
+ 
 <table>
 <caption><strong>Student Grades</strong></caption>
   <tr>
